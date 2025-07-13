@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #6c2ca4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8926cc;
+}
+
+.hidden {
+  display: none;
+}
+
+#fragments button {
+  display: block;
+  margin: 10px auto;
+  background: #2e2e2e;
+  border: 1px solid #666;
+}
+
+.scene {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  #game {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+}
