@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Echoes of the Unnamed</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="game">
+    <div id="intro" class="scene">
+      <h1>Echoes of the Unnamed</h1>
+      <p>You awaken with no name in a place that feels like memory... or something worse.</p>
+      <button onclick="startGame()">Begin</button>
+    </div>
+
+    <div id="room" class="scene hidden">
+      <h2 id="roomTitle"></h2>
+      <p id="roomDescription"></p>
+      <div id="fragments"></div>
+      <button id="nextButton" class="hidden" onclick="nextRoom()">Next Memory</button>
+    </div>
+
+    <div id="ending" class="scene hidden">
+      <h2 id="endingTitle"></h2>
+      <p id="endingText"></p>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+
+  <audio id="bgAudio" src="https://cdn.pixabay.com/audio/2023/04/06/audio_2cc8a5ab7f.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
